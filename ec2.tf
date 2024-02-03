@@ -14,3 +14,7 @@ resource "aws_eip" "eip" {
  domain = "vpc"
  instance = aws_instance.ec2.id
 }
+
+resource "aws_s3_bucket" "s3" {
+  bucket = "mybucket-9865324562"
+}
